@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirusChecker", "src\VirusChecker\VirusChecker.csproj", "{AA4C515A-A206-4253-8130-6E91F6C5EC58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleApp", "test\ExampleApp\ExampleApp.csproj", "{593A2C86-D4B2-4A3F-B968-122A644882CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C2322C10-1001-48A7-8EC6-AE4DD15CD23B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA4C515A-A206-4253-8130-6E91F6C5EC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA4C515A-A206-4253-8130-6E91F6C5EC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA4C515A-A206-4253-8130-6E91F6C5EC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA4C515A-A206-4253-8130-6E91F6C5EC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593A2C86-D4B2-4A3F-B968-122A644882CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593A2C86-D4B2-4A3F-B968-122A644882CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593A2C86-D4B2-4A3F-B968-122A644882CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593A2C86-D4B2-4A3F-B968-122A644882CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{593A2C86-D4B2-4A3F-B968-122A644882CE} = {C2322C10-1001-48A7-8EC6-AE4DD15CD23B}
+	EndGlobalSection
+EndGlobal

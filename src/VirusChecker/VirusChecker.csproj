@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Title>AMSI Virus Checker</Title>
+    <Authors>Colin Bull</Authors>
+    <Description>AMSI Virus Checker wrapper interface for C#</Description>
+    <RepositoryUrl>https://github.com/colinbull/AMSI-VirusChecker</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/colinbull/AMSI-VirusChecker</PackageProjectUrl>
+    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+    <PackageVersion>1.0.1</PackageVersion>
+  </PropertyGroup>
+</Project>
