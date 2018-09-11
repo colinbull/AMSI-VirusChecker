@@ -17,6 +17,7 @@ namespace VirusChecker
         private readonly string _appName;
         private IntPtr _amsiContext = IntPtr.Zero;
         private IntPtr _amsiSession = IntPtr.Zero;
+        private bool hasAmsi = true;
 
         public Scanner(string appName)
         {
@@ -49,15 +50,18 @@ namespace VirusChecker
                     
                     AMSI.NativeMethods.AmsiCloseSession(_amsiContext, _amsiSession);
                 }
-
+                throw new InvalidOperationException("Unable to open AMSI session");
             }
-            
-            throw new Exception("Unable to initialise AMSI Interface");
+            hasAmsi = false;
+            throw new InvalidOperationException("Unable to initialise AMSI Interface");
         }
 
         private void ReleaseUnmanagedResources()
         {
-            AMSI.NativeMethods.AmsiUninitialize(_amsiContext);
+            if (hasAmsi)
+            {
+                AMSI.NativeMethods.AmsiUninitialize(_amsiContext);
+            }
         }
 
         public void Dispose()
